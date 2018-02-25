@@ -1,12 +1,13 @@
 ﻿using System;
+using BenchmarkDotNet.Running;
 
-namespace math_benchmark_csharp
+namespace math_benchmarking_csharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            BenchmarkRunner.Run<SquareBenchmarking>();
         }
     }
 }
